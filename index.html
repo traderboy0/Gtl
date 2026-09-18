@@ -3,147 +3,745 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deepak Wadhwa - Learning Community</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<title>GOKUL CHHABRA || DIL SE TRADER</title>
+
+<meta name="description"
+content="Learn market basics, insights and trading discipline with GOKUL CHHABRA || DIL SE TRADER.">
 
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
 
-  .card {
-    width: 85%;
-    max-width: 340px; 
-    background: #010a0f;
-    border: 1.5px solid #00d2ff;
-    border-radius: 35px;
-    padding: 20px 15px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.15);
-  }
+/* ==============================
+   RESET
+============================== */
 
-  .profile-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid #00d2ff;
-    object-fit: cover;
-    margin-top: -5px;
-    box-shadow: 0 0 15px #00d2ff;
-  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  h1 {
-    color: #fff;
-    font-size: 20px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+html{
+    scroll-behavior:smooth;
+}
 
-  .features {
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-  }
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f7fb;
+    color:#111827;
+}
 
-  .feature-item {
-    color: #ccc;
-    font-size: 13px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    align-items: center;
-  }
 
-  .feature-item:last-child { border-bottom: none; }
+/* ==============================
+   MAIN PAGE
+============================== */
 
-  .icon { margin-right: 12px; font-size: 16px; }
+.zth-page{
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
 
-  .join-text {
-    color: #eee;
-    font-size: 12px;
-    margin: 20px 0 12px;
-    font-weight: 300;
-  }
 
-  .telegram-btn {
-    display: block;
-    background: linear-gradient(90deg, #00d2ff 0%, #9247ff 100%);
-    color: white;
-    text-decoration: none;
-    padding: 14px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
-  }
+/* ==============================
+   HERO
+============================== */
 
-  .hindi-quote {
-    color: #bbb;
-    font-size: 13px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
+.zth-hero{
+    position:relative;
+    padding:48px 18px 42px;
+    text-align:center;
+    background:
+        radial-gradient(circle at top right,
+        rgba(34,158,217,.12),
+        transparent 35%),
+        linear-gradient(135deg,#ffffff,#eef6ff);
+}
 
-  .footer-box {
-    border: 1px solid rgba(0, 210, 255, 0.2);
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 11px;
-    color: #888;
-  }
+.zth-container{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+}
 
-  /* Link styling for Agency */
-  .footer-box a { 
-    color: #00d2ff; 
-    font-weight: bold; 
-    text-decoration: none;
-  }
 
-  .disclaimer {
-    font-size: 9px;
-    color: #444;
-    margin-top: 12px;
-  }
+/* ==============================
+   PROFILE
+============================== */
+
+.zth-profile{
+    width:118px;
+    height:118px;
+    margin:0 auto 20px;
+    padding:4px;
+    background:#ffffff;
+    border-radius:50%;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.zth-profile img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+
+/* ==============================
+   BADGE
+============================== */
+
+.zth-badge{
+    display:inline-block;
+    margin-bottom:14px;
+    padding:7px 14px;
+    border-radius:50px;
+    background:#e8f5ff;
+    color:#087db5;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+
+/* ==============================
+   TITLE
+============================== */
+
+.zth-title{
+    margin:0 0 12px;
+    font-size:44px;
+    line-height:1.05;
+    font-weight:800;
+    letter-spacing:.5px;
+    color:#111827;
+}
+
+.zth-title span{
+    color:#229ed9;
+}
+
+
+/* ==============================
+   DESCRIPTION
+============================== */
+
+.zth-description{
+    max-width:570px;
+    margin:0 auto 24px;
+    color:#596579;
+    font-size:17px;
+    line-height:1.6;
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+.zth-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:100%;
+    max-width:430px;
+
+    margin:0 auto;
+
+    padding:17px 22px;
+
+    border-radius:13px;
+
+    background:#229ed9;
+    color:#ffffff !important;
+
+    text-decoration:none !important;
+
+    font-size:17px;
+    font-weight:700;
+
+    box-shadow:
+        0 9px 22px rgba(34,158,217,.25);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.zth-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:
+        0 12px 28px rgba(34,158,217,.32);
+}
+
+.zth-btn:active{
+    transform:scale(.98);
+}
+
+.zth-btn-icon{
+    font-size:20px;
+}
+
+
+/* ==============================
+   CONTENT
+============================== */
+
+.zth-content{
+    padding:35px 18px 10px;
+}
+
+
+/* ==============================
+   CARD
+============================== */
+
+.zth-card{
+    background:#ffffff;
+    border:1px solid #e8edf4;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:
+        0 7px 25px rgba(17,24,39,.055);
+}
+
+.zth-card-title{
+    margin-bottom:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:800;
+    color:#111827;
+}
+
+
+/* ==============================
+   FEATURES
+============================== */
+
+.zth-feature{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+
+    padding:17px 0;
+
+    border-bottom:1px solid #edf0f4;
+}
+
+.zth-feature:last-child{
+    border-bottom:none;
+    padding-bottom:2px;
+}
+
+.zth-feature-icon{
+    flex:0 0 44px;
+
+    width:44px;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:#eef7ff;
+
+    font-size:21px;
+}
+
+.zth-feature-content{
+    flex:1;
+}
+
+.zth-feature-title{
+    margin-bottom:5px;
+
+    font-size:16px;
+    font-weight:700;
+
+    color:#172033;
+}
+
+.zth-feature-text{
+    font-size:14px;
+    line-height:1.6;
+    color:#6b7280;
+}
+
+
+/* ==============================
+   SECOND CTA
+============================== */
+
+.zth-cta{
+    padding:35px 18px 40px;
+    text-align:center;
+}
+
+.zth-cta-title{
+    margin-bottom:9px;
+
+    font-size:28px;
+    font-weight:800;
+
+    color:#111827;
+}
+
+.zth-cta-text{
+    max-width:540px;
+    margin:0 auto 20px;
+
+    font-size:14px;
+    line-height:1.6;
+
+    color:#6b7280;
+}
+
+
+/* ==============================
+   DISCLAIMER
+============================== */
+
+.zth-disclaimer{
+    max-width:760px;
+
+    margin:0 auto 25px;
+    padding:17px 18px;
+
+    border:1px solid #eadfb9;
+    border-radius:12px;
+
+    background:#fffaf0;
+
+    text-align:center;
+
+    color:#66591f;
+
+    font-size:11px;
+    line-height:1.7;
+}
+
+.zth-disclaimer strong{
+    font-weight:700;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.zth-footer{
+    padding:22px 15px;
+    background:#111827;
+    text-align:center;
+    color:#aeb7c5;
+    font-size:13px;
+    margin-top:auto;
+}
+
+.zth-footer a{
+    color:#38bdf8;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.zth-footer a:hover{
+    text-decoration:underline;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media(max-width:600px){
+
+    .zth-hero{
+        padding:36px 15px 32px;
+    }
+
+    .zth-profile{
+        width:100px;
+        height:100px;
+        margin-bottom:17px;
+    }
+
+    .zth-badge{
+        font-size:11px;
+        padding:6px 12px;
+    }
+
+    .zth-title{
+        font-size:33px;
+    }
+
+    .zth-description{
+        font-size:15px;
+        line-height:1.55;
+        margin-bottom:21px;
+    }
+
+    .zth-btn{
+        font-size:16px;
+        padding:16px 18px;
+    }
+
+    .zth-content{
+        padding:25px 14px 5px;
+    }
+
+    .zth-card{
+        padding:21px 17px;
+        border-radius:17px;
+    }
+
+    .zth-card-title{
+        font-size:21px;
+        margin-bottom:14px;
+    }
+
+    .zth-feature{
+        gap:12px;
+        padding:15px 0;
+    }
+
+    .zth-feature-icon{
+        flex-basis:40px;
+        width:40px;
+        height:40px;
+        font-size:19px;
+    }
+
+    .zth-feature-title{
+        font-size:15px;
+    }
+
+    .zth-feature-text{
+        font-size:13px;
+    }
+
+    .zth-cta{
+        padding:30px 15px 32px;
+    }
+
+    .zth-cta-title{
+        font-size:24px;
+    }
+
+}
+
+
+/* ==============================
+   VERY SMALL MOBILE
+============================== */
+
+@media(max-width:360px){
+
+    .zth-title{
+        font-size:29px;
+    }
+
+    .zth-description{
+        font-size:14px;
+    }
+
+    .zth-card{
+        padding:18px 14px;
+    }
+
+}
+
 </style>
 </head>
+
+
 <body>
 
-<div class="card">
-  <img src="https://i.ibb.co/FkV61CBG/711752123-122102238423341553-4586529772719677765-n.jpg" alt="Munaaf" class="profile-img">
+<div class="zth-page">
 
-  <h1>Munaaf</h1>
 
-  <div class="features">
-    <div class="feature-item"><span class="icon"></span> Learning & Educational Sessions</div>
-    <div class="feature-item"><span class="icon"></span> Market Concepts & Awareness</div>
-    <div class="feature-item"><span class="icon"></span> Chart Reading Concepts</div>
-    <div class="feature-item"><span class="icon"></span> Educational Case Discussions</div>
-  </div>
+    <!-- ==========================
+         HERO SECTION
+    =========================== -->
 
-  <p class="join-text">Join our learning community and grow your knowledge</p>
+    <section class="zth-hero">
 
-  <a href="https://t.me/+VQKcLntbMYhjOGJl" class="telegram-btn">JOIN TELEGRAM</a>
+        <div class="zth-container">
 
-  <p class="hindi-quote">     ,     </p>
+            <!-- PROFILE IMAGE -->
 
-  <div class="footer-box">
-    This Channel Advertise By <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">AD BUILD AGENCY</a>
-  </div>
+            <div class="zth-profile">
 
-  <div class="disclaimer">
-    Terms | Privacy | Disclaimer <br>
-    This site is not part of Facebook� or endorsed by Facebook�.
-  </div>
+                <img
+                    src="https://i.ibb.co/QFPkHQmz/KFpg-k-Sjyd-Kh-Cb-Apnxxl-NF3-GKb-V2-O9-TXg-W3-Di-HDVv-Zw72o-QKqp3hz-IZyvn-TDAg8-OFj-Pima-Ye-Z2-O7-ERmom-Lbl.jpg"
+                    alt="GOKUL CHHABRA || DIL SE TRADER"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- BADGE -->
+
+            <div class="zth-badge">
+                📊 MARKET LEARNING COMMUNITY
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1 class="zth-title">
+                GOKUL CHHABRA <span>|| DIL SE TRADER</span>
+            </h1>
+
+
+            <!-- SHORT DESCRIPTION -->
+
+            <p class="zth-description">
+                Simple market insights, trading knowledge and
+                educational updates — all in one place.
+            </p>
+
+
+            <!-- CTA -->
+
+            <a
+                class="zth-btn"
+                href="https://t.me/+bTgKeVKz-8FmOTU1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Join GOKUL CHHABRA || DIL SE TRADER Telegram Channel"
+            >
+
+                <span class="zth-btn-icon">✈️</span>
+
+                JOIN TELEGRAM CHANNEL
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         FEATURES
+    =========================== -->
+
+    <section class="zth-content">
+
+        <div class="zth-container">
+
+            <div class="zth-card">
+
+                <h2 class="zth-card-title">
+                    📚 What You'll Find
+                </h2>
+
+
+                <!-- FEATURE 1 -->
+
+                <div class="zth-feature">
+
+                    <div class="zth-feature-icon">
+                        📈
+                    </div>
+
+                    <div class="zth-feature-content">
+
+                        <h3 class="zth-feature-title">
+                            Market Education
+                        </h3>
+
+                        <p class="zth-feature-text">
+                            Easy-to-understand information about
+                            stocks, Nifty and Bank Nifty.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE 2 -->
+
+                <div class="zth-feature">
+
+                    <div class="zth-feature-icon">
+                        📰
+                    </div>
+
+                    <div class="zth-feature-content">
+
+                        <h3 class="zth-feature-title">
+                            Market Updates
+                        </h3>
+
+                        <p class="zth-feature-text">
+                            Useful market-related updates and
+                            educational information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE 3 -->
+
+                <div class="zth-feature">
+
+                    <div class="zth-feature-icon">
+                        🛡️
+                    </div>
+
+                    <div class="zth-feature-content">
+
+                        <h3 class="zth-feature-title">
+                            Risk Awareness
+                        </h3>
+
+                        <p class="zth-feature-text">
+                            Learn why risk management and trading
+                            discipline are important.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE 4 -->
+
+                <div class="zth-feature">
+
+                    <div class="zth-feature-icon">
+                        🎯
+                    </div>
+
+                    <div class="zth-feature-content">
+
+                        <h3 class="zth-feature-title">
+                            Simple Learning
+                        </h3>
+
+                        <p class="zth-feature-text">
+                            Clear and simple content for market
+                            learning and general awareness.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         BOTTOM CTA
+    =========================== -->
+
+    <section class="zth-cta">
+
+        <div class="zth-container">
+
+            <h2 class="zth-cta-title">
+                Start Learning Today 🚀
+            </h2>
+
+            <p class="zth-cta-text">
+                Join the community for simple and useful
+                market education.
+            </p>
+
+
+            <a
+                class="zth-btn"
+                href="https://t.me/+bTgKeVKz-8FmOTU1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Join GOKUL CHHABRA || DIL SE TRADER Telegram Channel"
+            >
+
+                <span class="zth-btn-icon">✈️</span>
+
+                JOIN TELEGRAM CHANNEL
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================
+         DISCLAIMER
+    =========================== -->
+
+    <div class="zth-disclaimer">
+
+        <strong>Disclaimer:</strong>
+        This page provides educational and informational
+        content only. It is not investment advice and does
+        not guarantee returns. Market investments involve
+        risk. Please conduct your own research before making
+        any investment decision.
+
+    </div>
+
+
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer class="zth-footer">
+
+        🔥 Ads by
+
+        <a
+            href="https://t.me/+3XoqJNLxYHswNTc1"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            ADbuildagency
+        </a>
+
+        • Digital Growth 🚀
+
+    </footer>
+
 </div>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '976936205430649');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=976936205430649&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
